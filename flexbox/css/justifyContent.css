@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding: 0;margin:0;
+}
+
+.caixa1,.caixa2,.caixa3,.caixa4,.caixa5{
+    width: 450px;
+    margin: 0 auto;
+    border: 3px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;  
+}
+.caixa1 div,.caixa2 div, .caixa3 div, .caixa4 div, .caixa5 div{
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin: 15px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/* O justify content alinha de acordo com o eixo principal (axys x)*/
+
+.caixa1 {
+    /*Alinhado a esquerda*/
+    justify-content: flex-start;
+}
+.caixa2{
+    /*Alinhado a direita*/
+    justify-content: flex-end;
+}
+.caixa3{
+    /* Alinhado ao centro */
+    justify-content: center;
+}
+.caixa4{
+    /* Com espaço entre os itens */
+    justify-content: space-between;
+}
+.caixa5{
+    /* com espaço ao redor dos itens */
+    justify-content: space-around;
+}
+h1{
+    text-align: center;
+}
+.img {
+    width: 540px;
+    height: 425px;
+    margin: 0 auto;
+}
+
+figure img{
+    width: 456px;
+    border: solid 3px gray;
+}
+figcaption{
+    text-align: center;    
+    width: 450px;
+}

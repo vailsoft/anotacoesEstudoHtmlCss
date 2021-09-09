@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding: 0;margin:0;
+}
+
+.caixa1,.caixa2,.caixa3,.caixa4{
+    width: 450px;
+    margin: 0 auto;
+    border: 3px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;  
+    height: 300px;
+}
+.caixa1 div,.caixa2 div, .caixa3 div, .caixa4 div{
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Align Items alinha de acordo com o eixo transversal (axys y)*/
+
+.caixa1 {
+    /*Alinhado acima*/
+    align-items: flex-start;
+}
+.caixa2{
+    /*Alinhado abaixo*/
+    align-items: flex-end;
+}
+.caixa3{
+    /* Alinhado ao centro */
+    align-items: center;
+}
+.caixa4{
+    /* se ajusta ao tamanho do eixo transversal */    
+    align-items: stretch;
+}
+h1{
+    text-align: center;
+}
+.img {
+    width: 480px;
+    height: 425px;
+    margin: 0 auto;
+}
+figure{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.legenda{
+    text-align: center;
+}
